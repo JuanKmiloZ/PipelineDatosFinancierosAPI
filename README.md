@@ -26,5 +26,12 @@ pandas(no se utiliza el as)
 
 Proyecto en desarrollo como parte de una prueba técnica para desarrollador Python.
 
+ 
 ## Paso siguiente:
+
 Pruebas integración proyecto
+
+## Estado Pruebas
+
+1. check health ok
+2. check sync ok

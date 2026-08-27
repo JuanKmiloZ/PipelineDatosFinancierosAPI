@@ -98,3 +98,34 @@ def obtener_resumen():
 
 
 
+
+##################################
+# GET MOVING AVERAGE
+##################################
+
+def obtener_media_movil(ticker, window_size):
+  # What it does: Computes a rolling moving average on closing prices for a given ticker and window size.
+  # Open database connection
+  conexion = obtener_conexion()
+
+  # Query dates and closing prices for a specific ticker
+  consulta = """
+        SELECT date, close
+        FROM stock_daily_prices
+        INNER JOIN tickers
+        ON stock_daily_prices.ticker_id = tickers.id
+        WHERE tickers.symbol = ?
+        ORDER BY date
+    """
+
+  # Load data into a DataFrame
+  datos = pd.read_sql_query(consulta, conexion, params=[ticker])
+
+  # Close database connection
+  conexion.close()
+
+  # Calculate rolling moving average using the window size
+  datos["moving_average"] = datos["close"].rolling(window_size).mean()
+
+  # Convert resulting DataFrame to a list of dictionaries
+  return datos.to_dict(orient="records")

@@ -1,3 +1,4 @@
 fastAPI
 yfinance
 pandas
+pytest
