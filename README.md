@@ -7,15 +7,17 @@ Visual estudio Code
 Python
 FastAPI
 SQLite
+yfinancie(no se utiliza el as)
 
 ## Funcionalidad actual
-API REST básica.
-Endpoint GET /health para verificar el estado del servicio.
-Creación de una base de datos SQLite, con dos entidades (tickers y stockdailyprices)
+1. API REST básica.
+2. Endpoint GET /health para verificar el estado del servicio.
+3. Creación de una base de datos SQLite, con dos entidades (tickers y stockdailyprices)
+4. Extracción de Datos históricos con yfinancie
 
 ## Estado
 
 Proyecto en desarrollo como parte de una prueba técnica para desarrollador Python.
 
 ## Paso siguiente:
-yfinance
+transformación
