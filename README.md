@@ -1,17 +1,21 @@
-Nombre del Proyecto : PipelineDatosFinancierosAPI
+## Nombre del Proyecto : PipelineDatosFinancierosAPI
 
 API REST desarrollada en Python para procesar y consultar datos financieros.
 
-Tecnologías
+## Tecnologías
 Visual estudio Code
 Python
 FastAPI
-Funcionalidad actual
+SQLite
+
+## Funcionalidad actual
 API REST básica.
 Endpoint GET /health para verificar el estado del servicio.
-Estado
+Creación de una base de datos SQLite, con dos entidades (tickers y stockdailyprices)
+
+## Estado
 
 Proyecto en desarrollo como parte de una prueba técnica para desarrollador Python.
 
-Paso siguiente:
-Conectar SQLite.
+## Paso siguiente:
+yfinance
