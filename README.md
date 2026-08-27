@@ -20,10 +20,11 @@ pandas(no se utiliza el as)
 7. Carga de Datos Sqllite 
 8. Edpoint (POST /etl/sync) para ejecutar el ETL
 9. Extracción ok, Transformación ok, Carga ok de datos financieros
+10. Consulta de ticker (Histórico -Resumen)
 
 ## Estado
 
 Proyecto en desarrollo como parte de una prueba técnica para desarrollador Python.
 
 ## Paso siguiente:
-Edpoints consulta y analitica
+Pruebas integración proyecto
