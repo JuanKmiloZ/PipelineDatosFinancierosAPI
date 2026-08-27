@@ -1,4 +1,8 @@
 from fastapi import FastAPI
+from app.Basededatos import crear_tablas
+
+# Create tables
+crear_tablas()
 
 # Create it the application
 app=FastAPI()
