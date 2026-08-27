@@ -127,5 +127,6 @@ def obtener_media_movil(ticker, window_size):
   # Calculate rolling moving average using the window size
   datos["moving_average"] = datos["close"].rolling(window_size).mean()
 
+  datos["moving_average"] = datos["moving_average"].fillna(0)
   # Convert resulting DataFrame to a list of dictionaries
   return datos.to_dict(orient="records")
