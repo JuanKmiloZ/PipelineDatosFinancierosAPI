@@ -1,9 +1,9 @@
 from app.Basededatos import obtener_conexion
 
 
-# ==========================================
+#######################################
 # GUARDAR TICKER
-# ==========================================
+#######################################
 
 def guardar_ticker(simbolo):                     # Open the conexion and the cursor for BD
   conexion = obtener_conexion()

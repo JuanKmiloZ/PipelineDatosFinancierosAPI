@@ -18,10 +18,12 @@ pandas(no se utiliza el as)
 5. limpieza de Datos 
 6. Cálculo: Daily Return
 7. Carga de Datos Sqllite 
+8. Edpoint (POST /etl/sync) para ejecutar el ETL
+9. Extracción ok, Transformación ok, Carga ok de datos financieros
 
 ## Estado
 
 Proyecto en desarrollo como parte de una prueba técnica para desarrollador Python.
 
 ## Paso siguiente:
-Edpoint
+Edpoints consulta y analitica
