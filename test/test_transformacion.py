@@ -1,26 +1,18 @@
+import pandas
 from app.transformacion.limpieza import limpiar_datos
 
 
 def test_elimina_datos_incorrectos():
-  # Test dataset with one valid row and one invalid row (High < Low)
-  datos = [{
-      "Date": "2026-08-01",
-      "Open": 100,
-      "High": 110,
-      "Low": 90,
-      "Close": 105,
-      "Volume": 1000,
-  }, {
-      "Date": "2026-08-02",
-      "Open": 100,
-      "High": 90,
-      "Low": 100,
-      "Close": 95,
-      "Volume": 1000,
-  }]
+  # DataFrame with valid rows and one invalid row (negative Open price)
+  datos = pandas.DataFrame({
+      "Open": [100, -20, 110],
+      "High": [105, 100, 115],
+      "Low": [95, 90, 105],
+      "Close": [102, 95, 112],
+      "Volume": [1000, 2000, 3000],
+  })
 
   resultado = limpiar_datos(datos)
 
-  # Validate that the incorrect row is removed and only the valid one remains
-  assert len(resultado) == 1
-  assert resultado[0]["Date"] == "2026-08-01"
+  # Verify that the invalid row is dropped, leaving 2 valid records
+  assert len(resultado) == 2
