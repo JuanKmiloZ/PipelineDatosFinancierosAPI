@@ -1,7 +1,7 @@
 # librery incluide in python, no update
 import sqlite3
 
-# Where save it BD
+# Name BD
 BASE_DATOS="datos_finanzas.db"
 
 # Function for open conexion

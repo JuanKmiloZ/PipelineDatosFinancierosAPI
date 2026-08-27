@@ -17,10 +17,11 @@ pandas(no se utiliza el as)
 4. Extracción de Datos históricos con yfinancie
 5. limpieza de Datos 
 6. Cálculo: Daily Return
+7. Carga de Datos Sqllite 
 
 ## Estado
 
 Proyecto en desarrollo como parte de una prueba técnica para desarrollador Python.
 
 ## Paso siguiente:
-Load - Guardar en Sql lite
+Edpoint
