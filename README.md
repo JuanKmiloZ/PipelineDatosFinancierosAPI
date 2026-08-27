@@ -77,9 +77,9 @@ Pruebas integración proyecto
 - check sync ok
 - transformación ok
 - Prueba ETL con mock ok
-- Validar todos los endpoints pendiente
-- Calculo media movil pendiente
-- Revisión final pendiente
+- Validar todos los endpoints ok
+- Calculo media movil 
+- Revisión final
 
 ## Entorno
 
