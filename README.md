@@ -94,3 +94,13 @@ ejecutar API:
 Documentacion:
 
 """http://127.0.0.1:8000/docs"""
+
+## Docker
+
+Como configuración futura, el proyecto puede ejecutarse con Docker creando un `Dockerfile` y una imagen del proyecto.
+
+Comandos básicos:
+
+```bash
+docker build -t pipeline-finanzas .
+docker run -p 8000:8000 pipeline-finanzas
