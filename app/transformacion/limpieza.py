@@ -15,6 +15,7 @@ def limpiar_datos(datos):
 
     ]
 
+    datos = datos.sort_index()                              # Order date
     df["Daily Return"] = df["Close"].pct_change()           # Dialy performance
 
     return df
