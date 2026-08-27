@@ -3,12 +3,53 @@
 API REST desarrollada en Python para procesar y consultar datos financieros.
 
 ## Tecnologías
-Visual estudio Code
 Python
 FastAPI
 SQLite
 yfinancie(no se utiliza el as)
 pandas(no se utiliza el as)
+Git/Github
+Entorno virtual (venv)
+Visual estudio Code
+
+
+## Estructura del proyecto
+
+PipelineDatosFinancierosAPI/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── Basededatos.py
+│   │
+│   ├── extraccion/
+│   │   └── yahoo.py
+│   │
+│   ├── transformacion/
+│   │   └── limpieza.py
+│   │
+│   ├── carga/
+│   │   └── guardar.py
+│   │
+│   ├── etl/
+│   │   └── proceso.py
+│   │
+│   └── consultas/
+│       └── consultas.py
+│
+├── test/
+│   ├── test_transformacion.py
+│   └── test_etl.py
+│
+├── venv/
+│
+├── .gitignore
+├── README.md
+├── TEORIA.md
+├── pytest.ini
+├── requirements.txt
+└── datos_finanzas.db
+
 
 ## Funcionalidad actual
 1. API REST básica.
@@ -19,8 +60,7 @@ pandas(no se utiliza el as)
 6. Cálculo: Daily Return
 7. Carga de Datos Sqllite 
 8. Edpoint (POST /etl/sync) para ejecutar el ETL
-9. Extracción ok, Transformación ok, Carga ok de datos financieros
-10. Consulta de ticker (Histórico -Resumen)
+9. Consulta de ticker (Histórico -Resumen)
 
 ## Estado
 
@@ -33,5 +73,24 @@ Pruebas integración proyecto
 
 ## Estado Pruebas
 
-1. check health ok
-2. check sync ok
+- check health ok
+- check sync ok
+- transformación ok
+- Prueba ETL con mock ok
+- Validar todos los endpoints pendiente
+- Calculo media movil pendiente
+- Revisión final pendiente
+
+## Entorno
+
+Se crea entorno virtual denominado (venv), se activa con:
+
+"""venv\Scripts\activate"""
+
+ejecutar API:
+
+"""uvicorn app.main:app --reload"""
+
+Documentacion:
+
+"""http://127.0.0.1:8000/docs"""
