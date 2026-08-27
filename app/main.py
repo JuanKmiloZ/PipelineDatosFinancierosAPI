@@ -13,7 +13,7 @@ app=FastAPI()             # Create it the application
 
 @app.get("/health")       # When some execute a GET in health, execute a funtion
 
-def health():
+def health() -> dict:     # Specify that it returns a dictionary
     return {"status": "ok"}
 
 
